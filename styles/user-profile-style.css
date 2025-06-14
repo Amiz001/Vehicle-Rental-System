@@ -1,0 +1,138 @@
+.profile-main-content{
+    height: 95vh;
+    margin-left: 260px;
+    width: calc(100vw-250px);
+    padding: 8px;
+}
+.user-details{
+    height: 40vh;
+    padding: 50px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #037ace;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.159);
+    position: relative;
+
+}
+.profile-photo{
+    background-color: #14213d;
+    border-radius: 10px;
+    padding: 35px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: absolute;
+    left: 10px;
+}
+.profile-photo img{
+    border-radius: 100%;
+    height: 100%;
+}
+
+.image{
+    height: 200px;
+}
+
+a .EditButton {
+    margin: 20px;
+    padding: 15px 45px;
+    color: white;
+    background-color: #fca311;
+    border: 2px solid #fca311;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+a .EditButton:hover{
+    background-color: transparent;
+    border: 2px solid #fca311;
+    color:#fca311;
+}
+.details-box{
+    position: absolute;
+    left: 450px;
+    background-color: white;
+    border-radius: 10px;
+    height: 85%;
+    width: 690px;
+}
+.details{
+    position: absolute;
+    margin-top: -55px;
+    left: 40px;
+    padding: 50px 20px;
+    font-size: 18px;
+}
+.details h2{
+    padding: 10px 40px;
+    background-color: #e5e5e5;
+    border-radius: 15px;
+    font-size: 22px;
+    color: rgb(36, 36, 36);
+}
+.details h2 span{
+    background-color: #fca311;
+    margin-right: 15px;
+    padding: 5px;
+    border-radius: 10px;
+}
+.security-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.security-box{
+    height: 20vh;
+    width: 40%;
+    padding: 50px 100px;
+    left: 470px;
+    background-color: #037ace;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px rgba(255, 255, 255, 0.159);
+    position: relative;
+    bottom: -30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#animation{
+    height: 250px;
+    border-radius: 15px;
+    margin-top: 20px;
+    position: absolute;
+    left: 70px;
+    top: 10px;
+}
+#pswd
+{
+    padding: 15px 40px;
+    border: none;
+    color: white;
+    background-color: black;
+    border-radius: 8px;
+    transition: background-color 0.2s;
+    font-size: 20px;
+    cursor: pointer;
+    border: 3px solid black;
+}
+#pswd:hover, #delete:hover
+{
+    background-color: rgba(0, 0, 0, 0.088);
+    color: black;
+    border: 3px solid black;
+}
+#delete
+{
+    padding: 15px 40px;
+    border: none;
+    color: white;
+    background-color: rgb(251, 17, 17);
+    border-radius: 8px;
+    transition: background-color 0.2s;
+    font-size: 20px;
+    cursor: pointer;
+    border: 3px solid rgb(251, 17, 17);  
+}

@@ -1,0 +1,476 @@
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+  box-sizing: border-box;
+}
+body{
+  background-color: #3f3f3f;
+  color: black ;
+}
+
+#header{
+  background-image: url('../images/home-page/gg8.png');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 95vh;
+}
+
+/*------------Navigation bar----------------*/
+
+.container{
+  padding: 10px 8%;
+}
+nav
+{
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.logo{
+  width: 200px;
+  cursor: pointer;
+}
+nav ul{
+  padding: 25px 80px;
+  margin-right: auto;
+}
+nav ul li{
+  list-style: none;
+  display: inline-block;
+  margin: 15px 20px ;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #e5e5e5;
+  font-size: 17px;
+  text-transform: uppercase;
+}
+nav ul li a:hover{
+  color: white;
+}
+
+.buttons{
+  margin: 0px 10px ;
+  padding: 8px 15px ;
+  min-width: 80px;
+  color: black;
+  font-size: 16px;
+  cursor: pointer;
+  border: 3px solid #fca311 ;
+  border-radius: 5px;
+}
+#sign-up{
+  background-color: transparent;
+  color: white;
+  transition: background-color 0.5s;
+  transition: color 0.5s;
+}
+#login{
+  background-color: #fca311;
+  color: black;
+  transition: background-color 0.5s;
+  transition: color 0.5s;
+}
+
+/*------------Header----------------*/
+
+.header-text{
+  color: white;
+  font-size: 20px;
+  text-transform: capitalize;
+  line-height: 45px;
+  text-align: center;
+  margin-top: 70px;
+}
+.header-text h1 span{
+  color: black;
+  background-color: #fca311;
+  border-radius: 10px;
+  padding: 0px 10px;
+}
+
+/*-----------------Booking-----------------------*/
+
+.form-container {
+  background-color:rgb(237, 236, 236) ;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  max-width: 700px;
+  width: 100%;
+  margin: 50px auto 50px;
+}
+
+.vehicle-search-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.form-group {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group label {
+  color: #3f3f3f;
+  margin-bottom: 5px;
+}
+
+.form-group input, .form-group select {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.search-button {
+  background-color: black;
+  color: white;
+  margin-top: 20px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.25s;
+}
+
+.search-button:hover {
+  background-color: white;
+  color: black ;
+  border: 2px solid black;
+}
+
+/*---------------Second Section - Vehicle slider-----------------*/
+
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 85vh;
+  background-color: #181818;
+  border-radius: 10px;
+  padding: 10px 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+#slider-text {
+  margin-top: 70px;
+  text-transform: uppercase ;
+  margin-bottom: 20px;
+  font-size: 45px;
+  line-height: 15px;
+  color: white;
+}
+#slider-subtext {
+    font-size: 15px;
+    text-transform: uppercase ;
+    font-weight: 300;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.vehicle-btn-container{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.vehicle-btn{
+  margin: 5px;
+  padding: 10px 40px;
+  color: rgb(31, 31, 31);
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+}
+#type-car{
+  background-color:#d1ff06;
+  transition: background-color 0.35s;
+}
+#type-car:hover{
+  background-color:#c0ea04;
+}
+#type-van{
+  background-color:aqua;
+  transition: background-color 0.35s;
+}
+#type-van:hover{
+  background-color:rgb(0, 226, 226);
+}
+#type-bus{
+  background-color:#fca720;
+  transition: background-color 0.35s;
+}
+#type-bus:hover{
+  background-color:#e49310;
+}
+
+.slider {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+
+.slider-track {
+  display: flex;
+  transition: transform 0.5s ease-out;
+}
+
+.vehicle-card {
+  width: 33.33%;
+  text-align: center;
+  padding: 10px;
+}
+
+.vehicle-card img {
+  width: 455px;
+  background-color: #d1ff06 ;
+  border-radius: 15px;
+}
+
+.vehicle-card p {
+  margin-top: 15px;
+  font-size: 22px;
+  color: #ffffff;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.btn {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}
+/*---------------------map-------------------------*/
+
+.locations-container
+{
+  margin-top: -20px;
+  width: 100%;
+  height: 100vh;
+  color: #e5e5e5;
+  gap: 200px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  bottom: 60px;
+  background-color: #3f3f3f;
+}
+.map-container{
+  width: 30%;
+  height: 100%;
+  background-image: url('../images/branches/map.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0px;
+  left: 130px;
+  bottom: 40px;
+  animation: changeMap 60s  infinite;
+  transform: background-image 0.1s ease-in-out;
+  
+}
+
+@keyframes changeMap
+{
+  0% {
+    background-image: url('../images/branches/matara.png');
+  }
+12%{
+   background-image: url('../images/branches/galle.png');
+}  
+24% {
+    background-image: url('../images/branches/colombo.png');
+  }
+36%{
+  background-image: url('../images/branches/kandy.png');
+}  
+48% {
+  background-image: url('../images/branches/anuradhapura.png');
+  }
+60%{
+  background-image: url('../images/branches/trincomalee.png');
+}
+72% {
+  background-image: url('../images/branches/jaffna.png');
+  }
+86%{
+  background-image: url('../images/branches/baticalo.png');
+} 
+100%{
+  background-image: url('../images/branches/matara.png');
+}
+}
+
+
+.location-grid {
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+  align-items: center;
+  flex-wrap: wrap;
+  position: absolute;
+  right: 85px;
+}
+
+.location {
+  position: relative;
+  width: 45%;
+  height: 20%;
+  padding: 20px ;
+  border-radius: 10px;
+  box-shadow:  0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.5s ease-in-out;
+}
+
+#galle {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.592), transparent),
+    url("../images/branches/galle.jpg");
+}
+
+#matara {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.592), transparent),
+    url("../images/branches/matara.jpg");
+  background-size: cover;
+}
+
+#colombo {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.592), transparent),
+    url("../images/branches/colombo.jpg");
+}
+
+#jaffna {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.592), transparent),
+    url("../images/branches/jaffna.jpg");
+}
+
+#kandy {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.592), transparent),
+    url("../images/branches/kandy.jpg");
+}
+
+#anuradhapura {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.592), transparent),
+    url("../images/branches/anuradhapura.jpg");
+}
+
+.location:hover {
+  transform: scale(1.08);
+}
+
+.title {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: rgb(255, 255, 255);
+  z-index: 1;
+}
+.locations-btn #locations{
+  padding: 10px 30px;
+  background-color: #0b94e3;
+  color: white;
+  border-radius: 8px;
+  font-size: 25px;
+  border: none;
+  transition: background-color 0.35s;
+  transition: transform 0.35s;
+  cursor: pointer;
+
+}
+.locations-btn #locations:hover{
+  background-color: black;
+  transform: scale(102%)
+
+}
+
+/*------------------footer---------------------*/
+
+.footer-container{
+  height: 35vh;
+  position: relative;
+  background-color: #212121;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.footer-icons{
+  margin-top: 30px;
+}
+.footer-icons a img{
+  margin-right: 10px;
+  width: 45px;
+  filter: grayscale(100%);
+  transition: filter 0.6s;
+}
+.footer-icons a img:hover{
+  filter: grayscale(0%);
+  transform: scale(1.1);
+}
+.footer-text{
+  margin-top: -10px;
+  margin-bottom: 90px;
+}
+.footer-text ul{
+  display: flex;
+  justify-content: center ;
+  gap: 40px;
+  list-style: none;
+}
+.footer-text ul li a{
+  text-decoration: none;
+  font-size: 20px;
+  color: #b0b0b0;
+
+}
+
+.footer-text li a:hover{
+  color: white ;
+}
+.footer-copyright{
+  height: 22%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  background-color: black;
+  padding: 20px;
+}
+.footer-copyright p{
+  color: #e5e5e56f;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+}
+.footer-copyright span{
+  color: #a5a5a5;
+}

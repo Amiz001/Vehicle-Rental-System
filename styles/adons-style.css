@@ -1,0 +1,103 @@
+
+        /*.body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f8f9fa;
+            margin: 0;
+            padding: 40px;
+        }*/
+        .container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: auto;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .add-ons-section {
+            flex: 2;
+            padding: 20px;
+            border-right: 1px solid #ddd;
+        }
+
+        .summary {
+            flex: 1;
+            padding: 20px;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #14213d;
+            margin-bottom: 20px;
+        }
+
+        .add-on {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            margin-bottom: 10px;
+            background-color: #ffffff;
+            transition: 0.3s;
+        }
+
+        .add-on:hover {
+            background-color: #f1f1f1;
+        }
+
+        .add-on input {
+            margin-right: 10px;
+        }
+
+        .summary h2 {
+            font-size: 20px;
+            color: #14213d;
+            margin-bottom: 10px;
+        }
+
+        .summary-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .summary-total {
+            font-weight: bold;
+            font-size: 18px;
+            margin-top: 10px;
+            border-top: 1px solid #ddd;
+            padding-top: 10px;
+            color: #14213d;
+        }
+
+        #confirm {
+            background-color: #14213d;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 10px 15px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            margin-top: 10px;
+            width: 100%;
+        }
+
+        #confirm:hover {
+            background-color: #0f1c2b;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .add-ons-section {
+                border-right: none;
+                border-bottom: 1px solid #ddd;
+            }
+        }
+   

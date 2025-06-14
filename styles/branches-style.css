@@ -1,0 +1,177 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.header {
+  height: 40vh;
+  width: 100%;
+  background: url("../images/branches/header.jpg");
+  background-size: cover;
+  background-position: 0%;
+  position: relative;
+}
+.header h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: white;
+  display: inline-block;
+  border-bottom: none;
+  position: absolute;
+  left: 50px;
+  bottom: 30px;
+  padding-bottom: 10px;
+}
+
+.header h1::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50%;
+  height: 4px;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.top-section {
+  height: 60vh;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  background-color: white;
+}
+.top-section img {
+  height: 80%;
+  margin: auto 50px;
+  border-radius: 10px;
+}
+.top-section p {
+  margin: 100px 50px auto;
+  background-color: #e5e5e5;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+.last-section {
+  margin-top: 0px;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  background-color: #e5e5e5;
+}
+.map-container {
+  width: 50%;
+  margin-left: -10px;
+  border-radius: 20px;
+  background-color: #14213d;
+}
+.map-container img {
+  height: 90%;
+  position: relative;
+  left: 180px;
+  top: 40px;
+}
+
+.location-grid {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.location {
+  position: relative;
+  width: 40%;
+  height: 15%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.592), transparent),
+    url("../images/header.jpg");
+  background-size: cover;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.5s ease-in-out;
+}
+
+#galle {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.592), transparent),
+    url("../images/branches/galle.jpg");
+}
+
+#matara {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.592), transparent),
+    url("../images/branches/matara.jpg");
+  background-size: cover;
+}
+
+#colombo {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.592), transparent),
+    url("../images/branches/colombo.jpg");
+}
+
+#jaffna {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.592), transparent),
+    url("../images/branches/jaffna.jpg");
+}
+
+#kandy {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.592), transparent),
+    url("../images/branches/kandy.jpg");
+}
+
+#anuradhapura {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.592), transparent),
+    url("../images/branches/anuradhapura.jpg");
+}
+
+#trincomalee {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.592), transparent),
+    url("../images/branches/trincomalee.jpg");
+}
+
+#baticalo {
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.592), transparent),
+    url("../images/branches/batticalo.jpg");
+}
+
+.location:hover {
+  transform: scale(1.2);
+}
+
+.title {
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 30px;
+  color: white;
+  z-index: 1;
+  transition: opacity 0.4s ease-in-out;
+}
+.hidden-content img {
+  width: 40px;
+}
+
+.hidden-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 10px 40px;
+  opacity: 0;
+  z-index: 2;
+  transition: opacity 0.4s ease-in-out;
+}
+
+.location:hover .title {
+  opacity: 0;
+}
+
+.location:hover .hidden-content {
+  opacity: 1;
+}
